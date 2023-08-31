@@ -8,7 +8,7 @@ axios.get(api_url)
   .then(function (response) {
     // Check if the request was successful (HTTP status code 200)
     if (response.status === 200) {
-      // Extract and print the JSON response data
+      // Extract and log the JSON response data
       const data = response.data;
       console.log("Pokemon Name:", data.name);
       console.log("Abilities:", data.abilities.map(ability => ability.ability.name));
